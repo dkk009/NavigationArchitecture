@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="yml.com.samplekotlintest.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFrgament"
+            app:destination="@id/loginFrgament" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFrgament"
+        android:name="yml.com.samplekotlintest.LoginFrgament"
+        android:label="fragment_login_frgament"
+        tools:layout="@layout/fragment_login_frgament" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="yml.com.samplekotlintest.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+</navigation>
